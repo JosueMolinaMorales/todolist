@@ -11,7 +11,7 @@ function AddItemButton(props) {
 }
 
 class List extends React.Component {
-    listItem(props) {
+    listItem() {
         if(this.props.list.length === 0) return;
         var list = [];
         console.log(this.props.list);
@@ -26,7 +26,7 @@ class List extends React.Component {
     }
 
     render() {
-        //console.log(this.props.list);
+        
         const list = this.listItem();
         return (
             <div className='List'>
